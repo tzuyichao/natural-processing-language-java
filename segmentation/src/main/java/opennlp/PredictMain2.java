@@ -11,10 +11,13 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * from Natural Language Processing with Java Cookbook
+ */
 public class PredictMain2 {
     private static final Logger logger = LoggerFactory.getLogger(PredictMain2.class);
     public static void main(String[] args) {
-        String sampleText = "颱風警報發布區域桃園、台北、基隆、宜蘭，請注意強風豪雨。";
+        String sampleText = "颱風警報發布區域桃園、台北、基隆、宜蘭，請注意強風、豪雨，東半部特別留意焚風與高溫。";
         try(InputStream modelInputStream = new FileInputStream(new File("/Users/tzuyichao/lab/projects/natural-processing-language-java/segmentation/data/mymodel2.bin"))) {
             TokenizerModel tokenizerModel = new TokenizerModel(modelInputStream);
             Tokenizer tokenizer = new TokenizerME(tokenizerModel);

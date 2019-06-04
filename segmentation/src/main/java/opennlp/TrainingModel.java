@@ -10,6 +10,9 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 
+/**
+ * from Natural Language Processing with Java Cookbook
+ */
 public class TrainingModel {
     private static final Logger logger = LoggerFactory.getLogger(TrainingModel.class);
     public static void main(String[] args) {

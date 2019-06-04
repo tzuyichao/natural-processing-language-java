@@ -11,6 +11,9 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * from Natural Language Processing with Java Cookbook
+ */
 public class PredictMain {
     private static final Logger logger = LoggerFactory.getLogger(PredictMain.class);
     public static void main(String[] args) {
